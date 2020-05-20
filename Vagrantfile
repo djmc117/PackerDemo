@@ -1,7 +1,7 @@
 # -*- mode: ruby -*-
 # vi: set ft=ruby :
 
-Vagrant.configure("2") do |config|
+Vagrant.configure("2") do |config| idea what I am doing
 
     #override global variables to fit Vagrant setup
     ENV['DEMO_IP']||="192.168.99.10"
