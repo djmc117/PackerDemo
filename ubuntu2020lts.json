@@ -211,14 +211,8 @@
           "keep_input_artifact": true,
           "output": "{{.BuildName}}.box",
           "only": ["{{ user `build_name` }}-vbox"]
-        },
-        {
-          "type": "vagrant-cloud",
-          "box_tag": "{{user `name`}}",
-          "access_token": "{{user `cloud_token`}}",
-          "version": "{{user `version`}}",
-          "only": ["{{ user `build_name` }}-vbox"]
         }
+      
       ],
       {
         "type": "vsphere-template",
